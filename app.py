@@ -22,7 +22,7 @@ def generate_barcodes(codes, output_folder="barcodes_streamlit"):
         my_code.save(
             filename.replace(".png", ""),
             options={
-                "module_height": 3.0,
+                "module_height": 2.8,
                 "font_size": 6.0,
                 "text_distance": 2.25,
                 "quiet_zone": 2.0
@@ -39,7 +39,7 @@ def create_sticker_sheet(barcode_files):
 
     cols = 3
     label_width = 60 * mm
-    label_height = 20 * mm
+    label_height = 18* mm
 
     x_margin = (page_width - (cols * label_width)) / 2
     y_start = page_height - 40 * mm  # top margin
