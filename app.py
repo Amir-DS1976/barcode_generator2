@@ -74,7 +74,7 @@ end = st.number_input("End Number", min_value=start, step=1)
 if st.button("Generate PDF"):
     if start <= end:
         with st.spinner("Generating barcodes and preparing PDF..."):
-            sample_codes = [f"UEPL-SFD-{i:08d}" for i in range(start, end + 1)]
+            sample_codes = [f"UEPL-SPD-{i:08d}" for i in range(start, end + 1)]
             barcodes = generate_barcodes(sample_codes)
             pdf_file = create_sticker_sheet(barcodes)
 
