@@ -66,7 +66,7 @@ def create_sticker_sheet(barcode_files):
 
 # Streamlit UI
 st.set_page_config(page_title="Barcode Sheet Generator", layout="centered")
-st.title("📦 GEOAXIS Barcode Sheet Generator")
+st.title("📦 SPD GEOAXIS Barcode Sheet Generator")
 
 start = st.number_input("Start Number", min_value=1, step=1)
 end = st.number_input("End Number", min_value=start, step=1)
